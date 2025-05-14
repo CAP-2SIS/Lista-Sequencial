@@ -34,6 +34,26 @@ public class ListaInt {
         }
     }
 
+    //TODO FIX REMOVE
+    public void remove(int dado){
+        if (!isEmpty()){
+            if (dado == lista.dado){
+                lista = lista.prox;
+            } else {
+                No aux = lista;
+
+                while (aux.prox != null){
+                    if (aux.prox.dado == dado){
+                        aux.prox = aux.prox.prox;
+                        aux = aux.prox;
+                        break;
+                    }
+                }
+
+            }
+        }
+    }
+
 
     public void print() {
         StringBuilder printer = new StringBuilder();
