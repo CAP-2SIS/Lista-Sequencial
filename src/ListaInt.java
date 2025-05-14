@@ -35,17 +35,17 @@ public class ListaInt {
     }
 
 
-public void print() {
-    StringBuilder printer = new StringBuilder();
-    printer.append("[");
-    No aux = lista;
-    while (aux.prox != null) {
-        printer.append(aux.dado).append(", ");
-        aux = aux.prox;
-    }
-    printer.append(aux.dado).append("]");
-    System.out.println(printer);
+    public void print() {
+        StringBuilder printer = new StringBuilder();
+        printer.append("[");
+        No aux = lista;
+        while (aux.prox != null) {
+            printer.append(aux.dado).append(", ");
+            aux = aux.prox;
+        }
+        printer.append(aux.dado).append("]");
+        System.out.println(printer);
 
-}
+    }
 
 }
